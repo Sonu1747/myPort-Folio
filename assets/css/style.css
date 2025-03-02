@@ -572,21 +572,37 @@ section {
 --------------------------------------------------------------*/
 
 .project .card {
+  position: relative;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project .card img {
+  width: 100%;
   transition: all 0.3s ease-in-out;
 }
 
 .project .card:hover img {
-  filter: blur(5px); /* Blurs only the image */
-  transform: scale(1.1); /* Slight zoom-in effect */
+  filter: blur(5px); /* Blurs the image */
+  transform: scale(1.1); /* Slight zoom effect */
 }
 
+.project .card-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay for better readability */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 80%;
+  border-radius: 10px;
+}
 
-
-
-
+.project .card:hover .card-body {
+  opacity: 1; /* Shows the text on hover */
+}
 
