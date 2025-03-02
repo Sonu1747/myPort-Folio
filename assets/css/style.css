@@ -570,15 +570,7 @@ section {
 /*--------------------------------------------------------------
 # css for project section
 --------------------------------------------------------------*/
-.project .card {
-  transition: all 0.3s ease-in-out;
-}
 
-.project .card:hover {
-  filter: blur(3px); /* Adds blur effect */
-  transform: scale(1.05); /* Slightly enlarges the card */
-  cursor: pointer;
-}
 .project .card {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
