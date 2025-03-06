@@ -130,10 +130,26 @@ h6 {
 
 
 
+/* Keep Navbar Visible */
 .navbar-collapse {
-  display: flex !important;  /* Ensures navbar items are always visible */
+  display: flex !important;
   justify-content: center;
 }
+
+/* Ensure Items Stay in a Row */
+.navbar-nav {
+  flex-direction: row !important;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Remove Unwanted Mobile Collapsing */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    display: flex !important;
+  }
+}
+
 
 
 @keyframes clickEffect {
