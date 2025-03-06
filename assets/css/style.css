@@ -115,20 +115,36 @@ h6 {
 .nav-menu a {
   color: #fff;
   font-size: 16px;
+  font-weight: bold; /* Make text bold */
   padding: 10px 15px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  position: relative;
 }
 
+/* Hover Effect */
 .nav-menu a:hover {
   color: #149ddd;
+  transform: scale(1.1); /* Slight zoom effect */
 }
 
-/* Adjust the Main Content */
-#main {
-  margin-top: 80px; /* Push content down to prevent overlap */
-  margin-left: 0; /* Remove sidebar margin */
+/* Add an underline effect on hover */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #149ddd;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
+
+.nav-menu a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
