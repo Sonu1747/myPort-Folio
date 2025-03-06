@@ -128,10 +128,23 @@ h6 {
   animation: clickEffect 0.3s ease-in-out;
 }
 
+
+
+.navbar-collapse {
+  display: flex !important;  /* Ensures navbar items are always visible */
+  justify-content: center;
+}
+
+
 @keyframes clickEffect {
   0% { transform: scale(1); }
   50% { transform: scale(0.9); } /* Slight shrink effect */
   100% { transform: scale(1); }
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: row !important;
+  }
 }
 
 /* Hover Effect */
