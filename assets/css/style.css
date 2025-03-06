@@ -425,36 +425,23 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 15px;
-  color: #f4f6fd;
-  font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 1000px;
-  z-index: 9999;
+  width: 100%;
   background: #040b14;
-}
-
-#footer .copyright {
+  color: white;
   text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
 }
 
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
+#footer.show {
+  visibility: visible;
+  opacity: 1;
 }
-
-@media (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
-  }
-}
-
 
 
 /*--------------------------------------------------------------
