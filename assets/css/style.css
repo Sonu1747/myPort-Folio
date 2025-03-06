@@ -460,6 +460,59 @@ section {
   background: #fff;
   border: 2px solid #1f5297;
 }
+/*--------------------------------------------------------------
+# Certicate
+--------------------------------------------------------------*/
+
+.certification-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.certification-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certification-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.certification-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.certification-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.certification-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.certification-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
 
 /*--------------------------------------------------------------
 # Footer
