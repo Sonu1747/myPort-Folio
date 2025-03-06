@@ -115,34 +115,13 @@ h6 {
 .nav-menu a {
   color: #fff;
   font-size: 16px;
-  font-weight: bold; /* Make text bold */
   padding: 10px 15px;
   text-decoration: none;
-  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  position: relative;
+  transition: 0.3s;
 }
 
-/* Hover Effect */
 .nav-menu a:hover {
   color: #149ddd;
-  transform: scale(1.1); /* Slight zoom effect */
-}
-
-/* Add an underline effect on hover */
-.nav-menu a::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  width: 0%;
-  height: 2px;
-  background: #149ddd;
-  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
-}
-
-.nav-menu a:hover::after {
-  width: 100%;
-  left: 0;
 }
 
 /*--------------------------------------------------------------
