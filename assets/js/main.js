@@ -224,5 +224,19 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
+  /**
+   * Show footer when user scrolls to bottom
+   */
+  let footer = select('#footer'); // Select the footer element
+  if (footer) {
+    const toggleFooter = () => {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        footer.classList.add('show'); // Make footer visible
+      } else {
+        footer.classList.remove('show'); // Hide footer
+      }
+    };
+    window.addEventListener('scroll', toggleFooter);
+  }
 
 })()
